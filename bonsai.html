@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing-Bonsai Freelance Solution</title>
+    <link rel="icon" href="Images/b1.png">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        nav{
+            display:flex;
+            width:100%;
+            height:80px;
+        }
+        .q{
+           padding-top:12px;
+           padding-left:70px;
+        }
+        .a{ 
+            padding-top:17px;
+            color:#00b289;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size:20px;
+        }
+        .b{
+            padding-left:180px;
+            padding-top:25px;
+            font-size:18px;
+
+        }
+        .c{
+            padding-top:25px;
+            font-size:18px;
+            padding-left:40px;
+        }
+        .d{
+            margin-left:120px;
+            margin-top:20px;
+            
+        }
+        .d1{
+            width:100px;
+            height:40px;
+            font-size:15px;
+            border:1px solid #00b289;
+            border-radius:10px;
+            color:#00b289;
+            font-size:12px;
+            font-weight:800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+            
+        }
+        .d2{
+            width:150px;
+            height:40px;
+            font-size:15px;
+            margin-left:20px;
+            border:1px solid #00b289;                                                                                               
+            border-radius:10px;
+            color:white;
+            background-color:#00b289;
+            font-size:12px;
+            font-weight:800;
+        }
+        .e{
+           height:200px;
+        }
+        .e1{
+            font-size:20px;
+            margin-top:200px;
+            text-align:center;
+            color:#4c4d5f;
+        }
+        .f{
+           display:grid;
+           margin-left:10%;
+           width:80%;
+           height:750px;
+           grid-template-columns:auto auto auto;
+           grid-column-gap:5%;
+        }
+        .f1{
+            width:300px;
+            text-align: center;
+            border:1px solid black;
+        }
+        .f11{
+
+            padding-left:40px;
+            font-size:30px;
+            display:flex;
+           
+
+        }
+        .f111{
+            margin-left:5px;
+            font-size:50px;
+        }
+        .f112{
+            margin-left:8px;
+            margin-top:20px;
+        }
+        .f12{
+            margin-left:60px;
+            text-align: left;
+        }
+        .aab{
+            font-size:7px;
+            color:white;
+            background-color: #00b289;
+            height:30px;
+            transform:rotate(30deg);
+            width:65%;
+            text-align: center;
+            margin-left:140px;
+            margin-top:22px;
+            padding-top:5px;
+            padding-left:10px;
+
+
+        }
+        .f123{
+            
+            margin-top:20px;
+            padding-right:70px;
+            font-size:30px;
+        }
+        .f124{
+            margin-top:80px;
+            padding-right:145px;
+            font-size:30px;
+        }
+        .f125{
+            
+            margin-top:80px;
+            padding-right:80px;
+            font-size:30px;
+        }
+        hr{
+            margin-left:40px;
+            width:230px;
+            border-color: #00b289;
+        }
+        h3{ 
+            padding-top:20px;
+            font-size:30px;
+            text-align: left;
+        }
+        .f122{
+            margin-top:145px;
+            width:150px;
+            height:40px;
+            font-size:15px;
+            border-radius:10px;
+            margin-left:20px;
+            border:1px solid #00b289;                                                                  
+            color:white;
+            background-color:#00b289;
+            font-size:12px;
+            font-weight:800;                   
+            
+
+        }
+        .f2{
+            overflow:hidden;
+            width:300px;
+            text-align: center;
+            border:1px solid black;
+        }
+        .f22{
+
+            padding-left:40px;
+            font-size:30px;
+            display:flex;
+           
+
+        }
+        .f222{
+            margin-left:5px;
+            font-size:50px;
+        }
+        .f223{
+            margin-left:8px;
+            margin-top:20px;
+        }
+        .f23{
+            margin-left:60px;
+            text-align: left;
+        }
+        .f233{
+            margin-top:130px;
+            width:150px;
+            height:40px;
+            font-size:15px;
+            margin-left:20px;
+            border:1px solid #00b289;                                                                  border-radius:10px;
+            color:white;
+            background-color:#00b289;
+            font-size:12px;
+            font-weight:800;   
+            margin-bottom:20px;               
+        }
+        .f1242{
+            display: none;
+          }
+        .f3{
+            width:300px;
+            text-align: center;
+            border:1px solid black;
+        }
+        .f33{
+
+            padding-left:40px;
+            font-size:30px;
+            display:flex;
+           
+
+        }
+        .f333{
+            margin-left:5px;
+            font-size:50px;
+        }
+        .f334{
+            margin-left:8px;
+            margin-top:20px;
+        }
+        .f34{
+            margin-left:60px;
+            text-align: left;
+        }
+        .f344{
+            margin-top:40px;
+            width:150px;
+            height:40px;
+            font-size:15px;
+            margin-left:20px;
+            border:1px solid #00b289;                                                                  border-radius:10px;
+            color:white;
+            background-color:#00b289;
+            font-size:12px;
+            font-weight:800;                   
+        }
+        .f12{
+            margin-top:20px;
+            margin-right: 20px;
+           
+        }
+        .g{ 
+            text-align: center;
+            height:100px;
+        }
+        .g1{
+            color:#4c4d5f;
+            font-size:30px;
+            margin-top:80px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .h{ 
+            width:90%;
+            height:500px;
+
+        }
+        .h1{
+            margin-left:5% ;
+            display:flex;
+            padding-top:60px;
+            border:1px solid black;
+            height:150px;
+            width:100%;
+            
+        }
+        .h11{
+             width:85%;
+             margin-left:30px;   
+        }
+        .h12{
+             font-size:30px;          
+        }
+
+        .h111{
+            color:#4c4d5f;
+
+        }
+        .i{ 
+            height:300px;
+
+        }
+        .i1{
+            text-align: center;
+            margin-top:5%;
+            margin-left:15%;
+            width:60%;
+            height:200px;
+            display:flex;
+            border:1px solid black;
+        }
+        .i11{
+            text-align: left;
+            font-size:40px;
+            width:550px;
+            margin-top:50px;
+        }
+        .i13{
+            margin-left:25px;
+        }
+        .i12{
+            width:150px;
+            height:40px;
+            font-size:15px;
+            margin-top:70px;
+            border:1px solid #00b289;                                                                                 border-radius:10px;
+            color:white;
+            background-color:#00b289;
+            font-size:12px;
+            font-weight:800;
+             
+           
+        }
+        .j{
+            height:300px;
+        }
+        .j1{
+            color:#00b289;
+            font-size:26px;
+            text-align: center;
+
+        }
+        .j2{
+            font-weight:800;
+            color:#4c4d5f;
+            font-size:25px;
+            margin-left:250px;
+
+        }
+        @media screen and (max-width: 1120px)
+        {
+        .a,.q{
+            margin-top:5px;
+            margin-left:5px;
+            
+            
+        }
+        .b,.c,.d{
+            display:none;
+        }
+        .f{
+            display:block;
+            height:2000px;
+        }  
+        
+        .f1,.f2,.f3{
+            width:100%;
+            margin-top:50px;
+        }
+        hr,.f122,.f233,.f344{
+            width:90%;
+        }
+        .f124,.f123,.f124,.f1241{
+            margin-right:400px;
+          }
+          .f1242{
+            display: block;
+            margin-right:300px;
+            margin-top: 2px;
+          }
+          .f1241{
+            display: none;
+          }
+        }
+          @media screen and (max-width: 420px)
+        {
+        .a,.q{
+            margin-top:5px;
+            margin-left:5px;
+            
+            
+        }
+        .b,.c,.d{
+            display:none;
+        }
+        .f{
+            display:block;
+            height:2600px;
+        }  
+        
+        .f1,.f2,.f3{
+            width:100%;
+            margin-top:50px;
+        }
+        hr,.f122,.f233,.f344{
+            width:90%;
+        }
+        .f124,.f123,.f124,.f1241{
+            margin-right:400px;
+          }
+          .f1242{
+            display: none;
+            
+          }
+          .f1241{
+            display: block;
+            text-align: left;
+            margin-right:300px;
+            margin-top: 2px;
+
+          }
+
+    }
+        
+        
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="q">
+            <img src="Images/b1.png">
+            
+        </div>
+        <div class="a">
+            <h1>bonsai</h1>
+        </div>
+        <div class="b">
+            <p>Products</p>
+        </div>
+        <div class="c">
+            <p>Templates</p>
+        </div>
+        <div class="c">
+            <P>Pricing</P>
+        </div>
+        <div class="c">
+            <p>Reviews</p>
+        </div>
+        <div class="d">
+           <input class="d1" type="button" value="LOG IN">
+            <input class="d2" type="button" value="START FREE">
+        </div>
+    </nav>
+    <div class="e">
+        <div class="e1">
+            <h1>Plans & Pricing</h1>
+        </div>
+    </div>
+    <div class="f">
+        <div class="f1">
+            <h2 class="f124">Starter</h2>
+            <p class="f1241">Ideal for freelancers and contractors <br>just starting out.</p><br>
+            <p class="f1242">Ideal for freelancers and contractors just starting out.</p><br>
+            <div class="f11">
+            <p>$</p><h2 class="f111">24</h2><p class="f112">/MONTH</p>
+        </div><hr>
+            <ul class="f12">
+                <li>All Templates</li><br>
+                <li>Unlimited Clients & Projects</li><br>
+                <li>Invoicing & Payments</li><br>
+                <li>Proposals & Contracts</li><br>
+                <li>Tasks & Time Tracking</li><br>
+                <li>Client CRM</li><br>
+                <li>Expense Tracking</li><br>
+                <li>Up to 5 Project Collaborators</li><br>
+            </ul>
+            <input class="f122" type="button" value="START FREE">
+        </div>
+        <div class="f2">
+            <div class="aab">
+            <h1 >MOST POPULAR</h1>
+           </div>
+            <h2 class="f123">Professional</h2>
+            <p class="f1241">Everything a growing independent<br> business needs to thrive.</p><br>
+            <p class="f1242">Everything a growing independent business needs to thrive.</p><br>
+            <div class="f22">
+            <p>$</p><h2 class="f222">39</h2><p class="f223">/MONTH</p>
+        </div><hr>
+            <ul class="f23">
+                <li>Everything in Starter plus...</li><br>
+                <li>Custom Branding</li><br>
+                <li>Forms & Questionnaires</li><br>
+                <li>Workflow Automations</li><br>
+                <li>Client Portal</li><br>
+                <li>QuickBooks Integration</li><br>
+                <li>Calendly Integration</li><br>
+                <li>Zapier Integration</li><br>
+                <li>Up to 15 Project Collaborators</li><br>
+
+            </ul>
+            <input class="f233" type="button" value="START FREE">
+        </div>
+        <div class="f3">
+            <h2 class="f125">Business</h2>
+            <p class="f1241">The perfect package for small<br> businesses and agencies.</p><br>
+            <p class="f1242">The perfect package for small businesses and agencies.</p><br>
+            <div class="f33">
+            <p>$</p><h2 class="f333">79</h2><p class="f334">/MONTH</p>
+        </div><hr>
+            <ul class="f34">
+                <li>Everything in Starter and Professional plus...</li><br>
+                <li>Subcontractor Management</li><br>
+                <li>Hiring Agreement Templates (1099 contracts)</li><br>
+                <li>Subcontractor Onboarding</li><br>
+                <li>Talent Pool</li><br>
+                <li>3 Team Seats (additional seats $9/month)</li><br>
+                <li>Accountant Access</li><br>
+                <li>Connect Multiple Bank Accounts</li><br>
+                <li>Unlimited Subcontractors</li><br>
+                <li>Unlimited Project Collaborators</li><br>
+            </ul>
+            <input class="f344" type="button" value="START FREE">
+        </div>
+    </div>
+    <div class="g">
+        <div class="g1">
+            <p>Super charge your work with add-ons</p>
+        </div>
+    </div>
+    <div class="h">
+        <div class="h1">
+            <div class="h11">
+                <h2>Collaborators</h2>
+                <p>Invite other users to specific projects for limited access and functionality.</p>
+            </div>
+            <div> 
+                <h2 class="h111">Free</h2>
+            </div> 
+        </div>
+        <div class="h1">
+            <div class="h11">
+                <h2>Partners</h2>
+                <p>Invite other users for full account access and company management.</p>
+            </div> 
+           <div class="h111">
+             <div class="h12"> 
+                <h2>$9</h2>
+             </div>
+             <div> 
+                <h4>/MONTH</h4>
+             </div>
+            </div>
+        </div> 
+        <div class="h1">
+            <div class="h11">
+                <h2>Bonsai Tax</h2>
+                <p>Track expenses, identify write-offs, and estimate quarterly taxes easily.</p>
+                <h5>LEARN MORE</h5>
+            </div>
+            <div class="h111">
+             <div class="h12"> 
+                <h2 >$10</h2>
+             </div>
+             <div> 
+                <h4>/MONTH</h4>
+             </div>
+            </div>
+        </div>
+    </div>
+    <div class="i">
+        <div class="i1">
+            <div class="i11">
+                <p class="i13">It’s your business.<br>
+                    We’re here to help it grow.</p>
+            </div>
+            <div>
+                <input class="i12" type="button" value="START FREE">
+            </div>
+        </div>
+    </div>
+    <div class="j">
+        <div class="j1">
+            <h2>Frequently Asked Questions</h2>
+        </div><br>
+        <div class="j2">
+            <p>How does the free trial work?</p>
+        </div><br>
+        <div class="j2">
+            <p>Can I change plans anytime?</p>           
+        </div><br>
+        <div class="j2">
+            <p>How do I pause my Bonsai subscription?</p>
+        </div><br>
+        <div class="j2">
+            <p>What is your refund policy?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      margin-top: 20px;
+      background-color: #1a2456;
+      width: 96%;
+      margin-left: 2%;
+    }
+
+    .a1 {
+      color: white;
+    }
+
+    .a2 {
+      margin-left: 490px;
+    }
+
+    .b {
+      background-image: url(https://monogramcc.com/static/9a0b554db1990565457610c5f83b3ad7/91943/shop_cta_xl_896f6b8270.webp);
+      background-size: 100% 100%;
+      width: 100%;
+      height: 700px;
+    }
+
+    .b2 {
+      text-align: center;
+      margin-top: 200px;
+      margin-left: 150px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    .c {
+      position: absolute;
+      z-index: 1;
+      margin-top: 70px;
+    }
+
+
+    .c1 {
+
+      margin-left: 10%;
+
+    }
+
+    .c11 {
+      margin-left: 10%;
+    }
+
+    .c2 {
+      width: 100%;
+      height: 350px;
+    }
+
+    .c3 {
+      display: flex;
+      color: #1a2456;
+
+
+    }
+
+    .c4 {
+      margin-right: 100px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    }
+
+    .c5 {
+      margin-left: 60px;
+
+    }
+
+    .c6 {
+      color: #1a2456;
+    }
+
+    .c7 {
+      position: absolute;
+      z-index: 2;
+      border: 3px solid #ff8b68;
+      margin-left: 475px;
+      background-color: #ff8b68;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+    .c77 {
+      position: absolute;
+      z-index: 2;
+      border: 3px solid #ff8b68;
+      margin-left: 1050px;
+      background-color: #ff8b68;
+      font-size: 15px;
+      margin-top: 10px;
+
+    }
+
+    
+
+    .b1 {
+      padding-top: 20px;
+      font-size: 20px;
+      word-spacing: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #1a2456;
+    }
+
+    .b2 {
+      padding-top: 20px;
+      font-size: 20px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #1a2456;
+    }
+    .d {
+      margin-top:1400px;
+      background-image: url(https://monogramcc.com/static/fb6b98aa90bbce383e12a09c50936e96/9ee2a/shop-banner-module.webp);
+      background-size: 100% 100%;
+      text-align: center;
+      background-color: #cec9bf;
+      height: 400px;
+    }
+    .d1{
+            padding-top:20px;
+            font-size:20px;
+            word-spacing:20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#1a2456;
+    }
+    .d2{
+            padding-top:20px;
+            font-size:20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#1a2456;
+
+    }
+    .e{
+      margin-top:30px;
+    }
+    .e7 {
+      position: absolute;
+      z-index: 2;
+      border: 3px solid #ff8b68;
+      margin-left: 320px;
+      background-color: #ff8b68;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .f{
+            display:flex;
+            margin-top:50px;
+            color:#ff8b68;
+            background-color: #1a2456;
+            height:300px;
+        }
+        .f1{
+            margin-top:20px;
+            margin-left:80px;
+            font-size:12px;
+        }
+        .f2{
+            width:180px;
+            height:30px;
+            font-size:15px;
+            border:1px solid #ff8b68 ;
+            color:#ff8b68;
+            background-color: #1a2456;
+            font-size:12px;
+            font-weight:800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .f3{
+            width:100px;
+            height:30px;
+            font-size:15px;
+            border:1px solid #ff8b68 ;
+            color:#ff8b68;
+            background-color: #1a2456;
+            border-radius: 10px;
+            font-size:12px;
+            font-weight:800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+
+        }
+        @media screen and (max-width: 1100px)
+        {
+          .navbar{
+            height:80px;
+          }
+          .aa1{
+            display:none;
+          }
+          .aaa1{
+            padding-right:800px;
+
+          }
+          .c4{
+            margin:auto;
+
+          }
+          .c7{
+            position: absolute;
+            z-index: 2;
+            margin-left: 300px;
+          }
+          .c77{
+            position: absolute;
+            z-index: 2;
+            margin-left: 725px;
+          }
+          .e7 {
+      position: absolute;
+      z-index: 2;
+      margin-left: 200px;
+ 
+    } 
+    .f{
+      height:550px;
+    }
+
+
+        }
+        @media screen and (max-width: 800px)
+        {
+          .navbar{
+            height:80px;
+            display:flex;
+          }
+          .aaa1{
+            padding-right:400px;
+
+          }
+          .d{
+            margin-top:1550px;
+          }
+          .c7{
+            position: absolute;
+            z-index: 2;
+            margin-left: 195px;
+          }
+          .c77{
+            position: absolute;
+            z-index: 2;
+            margin-left: 525px;
+          }
+          .e7 {
+      position: absolute;
+      z-index: 2;
+      margin-left: 600px;
+ 
+    }
+  }
+    @media screen and (max-width: 400px)
+        {
+          .navbar{
+            height:80px;
+            display:flex;
+          }
+          .aaa1{
+            padding-right:50px;
+
+          }
+          .b{
+            height: 500px;
+          }
+          .b2{
+            margin-left:50px;
+            margin-top:50px;
+          }
+          .d{
+            margin-top:2550px;
+          }
+          .c7{
+            position: absolute;
+            z-index: 2;
+            margin-left:200px;
+          }
+          .c77{
+            position: absolute;
+            z-index: 2;
+            margin-left: 125px;
+          }
+          .e7 {
+      position: absolute;
+      z-index: 2;
+      margin-left: 250px;
+ 
+    }
+    .f{
+      height:1050px;
+    }
+
+
+
+        }
+                
+           
+    
+  </style>
+</head>
+
+<body>
+  <div class="b">
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="a1 container-fluid">
+        <img src="Images/mono.png">
+        <a class="aaa1 navbar-brand text-warning ms-2" href="#">MONOGRAM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="aa1">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="a2 nav-item pt-2">
+              <a class="nav-link active text-warning" aria-current="page" href="#">HOW IT WORKS</a>
+            </li>
+            <li class="nav-item dropdown ms-4 pt-2">
+              <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown " aria-expanded="false">
+                WORKFLOWS
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">AUDIO CONSOLE</a></li>
+                <li><a class="dropdown-item" href="#">VIDEO CONSOLE</a></li>
+                <li><a class="dropdown-item" href="#">PHOTO CONSLOE</a></li>
+                <li><a class="dropdown-item" href="#">MINI CONSOLE</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-4 pt-2">
+              <a class="nav-link text-warning" href="#">DOWNLOAD</a>
+            </li>
+            <li class="nav-item ms-4 pt-2">
+              <a class="nav-link text-warning" href="#">BLOG</a>
+            </li>
+            <li class="nav-item ms-4 pt-2">
+              <a class="nav-link text-warning" href="#">SUPPORT</a>
+            </li>
+            <img class="ms-4" src="Images/7.png">
+            <li class="nav-item dropdown pt-2">
+              <a class="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                GBP
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">USD($)</a></li>
+                <li><a class="dropdown-item" href="#">CAD($)</a></li>
+                <li><a class="dropdown-item" href="#">UAD($)</a></li>
+                <li><a class="dropdown-item" href="#">JPY($)</a></li>
+                <li><a class="dropdown-item" href="#">AUD($)</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </nav>
+    <div class="b2 text-warning">
+      <h1>A Console for Every Workflow</h1><br>
+      <p>Discover the perfect console for yours.</p>
+    </div>
+  </div>
+  <div class="c container">
+    <div class="c1 row">
+      <div class="col col-md-6 col-lg-6 col-xxl-6">
+        <h5 class="c7">PRE-ORDER</h5>
+        <img class="c2"
+          src="https://cdn.shopify.com/s/files/1/0974/7950/products/Everyday-Bundle-Mocks-horizontal_1920x1281_crop_center.jpg.webp?v=1668446709"><br>
+        <div class="c3">
+          <h3 class="c4">MINI CONSOLE</h3>
+          <p class="c5">£201</p><br>
+        </div>
+        <p class="c6">Ideal for Audio & Video.Adaptable to any video</p>
+      </div>
+      <div class="col col-md-6 col-lg-6 col-xxl-6">
+        <h5 class="c7">PRE-ORDER</h5>
+        <img class="c2"
+          src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_TravelerBracket1_Monogram_May2020_4561_30a35bd4-01b4-44db-894a-e06162d8ab77_1920x1280_crop_center.jpg.webp?v=1668433146"><br>
+        <div class="c3">
+          <h3 class="c4">AUDIO CONSOLE</h3>
+          <p class="c5">£401</p>
+        </div>
+        <p class="c6">Ideal for Audio & Video.Adaptable to any video</p>
+      </div>
+      </div>
+      <div class="c1 row">
+        <div class="col  col-md-6 col-lg-6 col-xxl-6">
+          <h5 class="c7">PRE-ORDER</h5>
+          <img class="c2"
+            src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_StudioBracket1_Monogram_May2020_4558_53685b21-b09f-45b0-85a2-180d6acfafac_1920x1280_crop_center.jpg.webp?v=1668433210"><br>
+          <div class="c3">
+            <h3 class="c4">PHOTO CONSOLE</h3>
+            <p class="c5">£482</p><br>
+          </div>
+          <p class="c6">Ideal for Audio & Video.Adaptable to any video</p>
+        </div>
+        <div class="col col-md-6 col-lg-6 col-xxl-6">
+          <h5 class="c7">PRE-ORDER</h5>
+          <img class="c2"
+            src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_MasterBracket1_Monogram_May2020_4555_1920x1280_crop_center.jpg.webp?v=1668433240"><br>
+          <div class="c3">
+            <h3 class="c4">VIDEO CONSOLE</h3>
+            <p class="c5">£723</p>
+          </div>
+          <p class="c6">Ideal for Audio & Video.Adaptable to any video</p>
+        </div>
+        </div>
+      <div class="c11 row">
+        <div class="col col-md-12 col-lg-12 col-xxl-12">
+          <h5 class="c77">PRE-ORDER</h5>
+          <img class="c2"
+            src="https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_2_878639a5-2865-4c4f-a21e-498f3a3db3b8_1920x1080_crop_center.jpg.webp?v=1712087494"><br>
+          <div class="c3">
+            <h3 class="c4">MONOGRAM KEYBOARD</h3>
+            <p class="c5">£442</p><br>
+          </div>
+          <p class="c6">Adaptable to any video</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d">
+    <div class="d1">
+      <h1>Create Your Own Console</h1>
+    </div>
+    <div class="d2">
+      <p>Add-on to make it perfect.</p>
+    </div>
+  </div>
+  <div class="e container">
+    <div class="row">
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/files/preview_images/d1564dbc344144d594c1e602d3ab46d7.thumbnail.0000000000_1366x768_crop_center.jpg.webp?v=1712243546"><br>
+        <div class="c3">
+        <h3 class="c4">MONOGRAM KEYBOARD</h3>
+        <p class="c5">£317</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_3_45ca86e3-ee84-48a0-b55d-c991d2e57e3c_1366x768_crop_center.jpg.webp?v=1712087520"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM MULTIPAD</h3>
+            <p class="c5">£158</p>
+            </div>
+
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_CoreBracket1_Monogram_May2020_4578_6683fd8e-be63-45bb-9fbd-dd82a4838db8_1366x911_crop_center.jpg.webp?v=1593651640"><br>
+        <div class="c3">
+        <h3 class="c4">MONOGRAM CORE</h3>
+        <p class="c5">£127</p>
+        </div>
+
+      </div>
+   
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1366x911_crop_center.jpg.webp?v=1593651849"><br>
+            <div class="c3">
+            <h3 class="c4">SLIDER MODULE</h3>
+            <p class="c5">£127</p>
+            </div>
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1366x911_crop_center.jpg.webp?v=1593651849"><br>
+        <div class="c3">
+        <h3 class="c4">ORBITER MODULE</h3>
+        <p class="c5">£127</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_KeysBracket1_Monogram_May2020_4571_43b65ca9-4fde-4f55-9f0e-32374554ce76_1366x911_crop_center.jpg.webp?v=1593651769"><br>
+        <div class="c3">
+        <h3 class="c4">ESSENTIAL KEYS MODULE</h3>
+        <p class="c5">£103</p>
+        </div>
+
+      </div>
+   
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_DialBracket1_Monogram_May2020_4575_981a6401-f834-4094-9a6e-6cd7d0b374ca_1366x911_crop_center.jpg.webp?v=1593651701"><br>
+        <div class="c3">
+        <h3 class="c4">DIAL MODULE</h3>
+        <p class="c5">£103</p>
+        </div>
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <h5 class="e7">PRE-ORDER</h5>
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/20221018_MonogramCC_Case_02_1366x911_crop_center.jpg.webp?v=1666799808"><br>
+        <div class="c3">
+        <h3 class="c4">MONOGRAM CARRYING CASE</h3>
+        <p class="c5">£47</p>
+        </div>
+
+      </div> 
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-video-final-august_1366x984_crop_center.jpg.webp?v=1661441054"><br>
+            <div class="c3">
+            <h3 class="c4">CONSOLE BACK: VIDEO</h3>
+            <p class="c5">£55</p>
+            </div>
+
+      </div>
+   
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-photo-final-august_1366x984_crop_center.jpg.webp?v=1661440997"><br>
+            <div class="c3">
+            <h3 class="c4">CONSOLE BACK: PHOTO</h3>
+            <p class="c5">£31</p>
+            </div>
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-midi-final-august_1366x984_crop_center.jpg.webp?v=1661440892"><br>
+        <div class="c3">
+        <h3 class="c4">CONSOLE BACK: AUDIO</h3>
+        <p class="c5">£23</p>
+        </div>
+
+      </div>
+      <div class="col col-md-6 col-lg-4 col-xxl-4">
+        <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1366x904_crop_center.jpg.webp?v=1633485492"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM CARE</h3>
+            <p class="c5">£16 - £103</p>
+            </div>
+
+      </div>
+    </div>
+    
+
+  </div>
+  <div class="f container-fluid">
+    <div class="row">
+      <div class="f1 col-2 col-md-2 col-lg-2 col-xxl-1  ">
+        <h5>MONOGRAM</h5><br>
+            <p>305 King St. W.<br>
+                Suite 502<br>
+                Kitchener, ON<br>
+                Canada</p>
+      </div>
+      <div class="f1 col-3 col-md-2 col-lg-2 col-xxl-1">
+        <h5>QUICK LINKS</h5><br>
+            <p>Home</p>
+            <p>How it Works</p>
+            <p>Shop</p>
+            <p>Download</p>
+      </div>
+      <div class="f1 col-1 col-md-2 col-lg-2 col-xxl-1">
+        <h5>HELP</h5><br>
+        <p>FAQs</p>
+        <p>Support Center</p>
+        <p>Shipping and Sales</p>
+      </div>
+      <div class="f1 col-3 col-md-2 col-lg-2 col-xxl-1">
+        <h5>INFORMATION</h5><br>
+            <p>About Us</p>
+            <p>Work with us</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Terms of Sale</p>
+            <p>Press Kit</p>
+      </div>
+      <div class="f1 col-9 col-md-6 col-lg-4 col-xxl-4">
+        <h5>SUBSCRIBE TO MONOGRAM</h5><br>
+            <p>Master productivity with Creative Console and get all<br> the latest Monogram news.</p><br>
+            <input class="f2" type="email" placeholder="Email Address" required>
+            <input class="f3" type="submit"><br>
+            <img src="Images/8.png">
+            <p>© Monogram 2024</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop|Monogram Consoles</title>
+    <link rel="icon" href="Images/logo3.png">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .a{
+           text-align: center;
+           width:95%;
+           height:60px;
+           margin-left:2%;
+           display:flex;
+           color:#ff8b68;
+           font-family:'Courier New', Courier, monospace;
+           position:fixed;
+           background-color: #1a2456;
+           border:1px solid #1a2456;
+        }
+        .a1{
+            padding-top:5px;
+            padding-left:5px;
+            padding-bottom:5px;
+            display:flex;
+        }
+        .a2{
+            margin-left:5px;
+            margin-top:20px;
+            margin-right:10px;
+        }
+        .a3{
+            margin-left:15px;
+            margin-top: 15px;
+        }
+        .a4{
+            margin-left:450px;
+        }
+        .a5{
+            font-weight: 700;
+            font-family:'Courier New', Courier, monospace;
+            margin-left:20px;
+            margin-top:19px;
+            width:80%;
+            background-color: #1a2456;
+            color:#ff8b68;
+            border: none;
+        }
+        .a6{
+            font-weight: 700;
+            font-family:'Courier New', Courier, monospace;
+            margin-top:5px;
+            width:60%;
+            border:none;
+            background-color: #1a2456;
+            color:#ff8b68;
+           
+        }
+        .b{ 
+            background-image:url(https://monogramcc.com/static/fb6b98aa90bbce383e12a09c50936e96/9ee2a/shop-banner-module.webp);
+            background-size: 100% 100%;
+            text-align: center;
+            background-color: #cec9bf;
+            height:400px;
+        }
+        .b1{
+            padding-top:20px;
+            font-size:20px;
+            word-spacing:20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#1a2456;
+        }
+        .b2{
+            padding-top:20px;
+            font-size:20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:#1a2456;
+
+        }
+        .c{
+            margin-left:5%;
+            margin-top:50px;
+            display:grid;
+            grid-template-columns:auto auto auto;
+            grid-gap:40px;
+            width:90%;
+            height:1800px;
+        }
+        .c1{
+            width:100%;
+            height:400px;
+
+        }
+        .c2{
+            width:100%;
+            height:350px;
+        }
+        .c3{
+            display:flex;
+            color:#1a2456;
+
+
+        }
+        .c4{
+            margin-right:100px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+        }
+        .c5{
+            margin-left:60px;
+
+        }
+        .d{
+            display:flex;
+            margin-top:50px;
+            color:#ff8b68;
+            background-color: #1a2456;
+            height:300px;
+        }
+        .d1{
+            margin-top:50px;
+            margin-left:80px;
+        }
+        .d1{
+            line-height: 20px;
+        }
+        .d2{
+            width:180px;
+            height:30px;
+            font-size:15px;
+            border:1px solid #ff8b68 ;
+            color:#ff8b68;
+            background-color: #1a2456;
+            font-size:12px;
+            font-weight:800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        .d3{
+            width:100px;
+            height:30px;
+            font-size:15px;
+            border:1px solid #ff8b68 ;
+            color:#ff8b68;
+            background-color: #1a2456;
+            border-radius: 10px;
+            font-size:12px;
+            font-weight:800;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+
+        }
+        @media screen and (max-width: 1140px)
+        {
+            .a2,.a5{
+                display:none;
+            }
+            
+            .a7{
+                margin-left:600px;
+            }
+            .c{ grid-template-columns:auto auto;
+            grid-gap:40px;
+            width:90%;
+            height:2800px;
+
+            }
+            .c2{
+                width:100%;
+                height:300px;    
+
+            }
+            .d{
+                width:100%;
+            height:600px;
+            display:flex;
+
+            }
+            .d4{
+                
+                position: absolute;
+                z-index: 1;
+                
+                    
+            }
+            .d5{
+                position: absolute;
+                z-index: 2;
+                margin-top:350px;
+                
+            }
+            .d6{
+                position: absolute;
+                z-index: 3;
+                margin-top:350px;
+                margin-left:400px;
+                
+            }
+            .d7{
+                position: absolute;
+                z-index: 4;
+                margin-top:350px;
+                margin-left:700px;
+                
+            }
+            .d8{
+                position: absolute;
+                z-index: 5;
+                margin-left:500px;
+                
+            }
+        }
+            @media screen and (max-width: 450px)
+            {
+            .a2,.a5{
+                display:none;
+            }
+            
+            .a7{
+                margin-left:100px;
+            }
+            .a{
+                background-color: 90% 90%;
+            }
+            .c{ grid-template-columns:auto;
+            grid-gap:40px;
+            width:90%;
+            height:5800px;
+
+            }
+            .c2{
+                width:100%;
+                height:300px;    
+
+            }
+            .d{ 
+                width:100%;
+                height:700px;
+                display:block;
+                font-size:15px;
+            }
+            .d4{
+                
+                position: absolute;
+                z-index: 1;
+                margin-top:300px;
+                margin-left:20px;
+                
+                    
+            }
+            .d5{
+                position: absolute;
+                z-index: 2;
+                margin-top:300px;
+                margin-left:200px;
+                
+            }
+            .d6{
+                position: absolute;
+                z-index: 3;
+                margin-top:500px;
+                margin-left:20px;
+                
+            }
+            .d7{
+                position: absolute;
+                z-index: 4;
+                margin-top:500px;
+                margin-left:200px;
+                
+            }
+            .d8{
+                position: absolute;
+                z-index: 5;
+                margin-left:20px;
+                
+            }
+            
+            
+
+        }
+            
+      
+        /* .c2{
+            width:70%;
+            height:400px;
+        } */
+        
+        
+        
+        /* .a5:active{
+            background-color: white;
+
+        }
+        option:hover{
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+      <div class="b">
+        <nav class="a">
+            <div class="a1">
+                <img src="Images/mono.png">
+                <h5 class="a3">MONOGRAM</h5>
+            </div>
+            <div class="a2 a4">
+                <h5>HOW IT WORKS</h5>
+            </div>
+            <div >
+                <select class="a5">
+                    <option>WORKFLOWS</option>
+                    <option>AUDIO CONSOLE</option>
+                    <option>PHOTO CONSOLE</option>
+                    <option>VIDEO CONSOLE</option>
+                    <option>MINI CONSOLE</option>
+                </select>
+            </div>
+            <div class="a2">
+                <h5>DOWNLOAD</h5>
+            </div>
+            <div class="a2">
+                <h5>BLOG</h5>
+            </div>
+            <div class="a2">
+                <h5>SUPPORT</h5>
+            </div>
+            <div class="a2">
+                <h5>SHOP</h5>
+            </div>
+            <div class="a7" style="display:flex;">
+                <img src="Images/7.png">
+                <select  class="a6">
+                    <option>GBP</option>
+                    <option>CAD ($)</option>
+                    <option>USD ($)</option>
+                    <option>EUR ($)</option>
+                    <option>AUD ($)</option>
+                    <option>GBP ($)</option>
+                    <option>KRW ($)</option>
+                    <option>JPF ($)</option>
+                </select>
+            </div>
+          </nav>
+        <div class="b1">
+            <h1>Create Your Own Console</h1>
+        </div>
+        <div class="b2">
+            <p>Add-on to make it perfect.</p>
+        </div>
+      </div>
+      <div class="c" >
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/files/preview_images/d1564dbc344144d594c1e602d3ab46d7.thumbnail.0000000000_1366x768_crop_center.jpg.webp?v=1712243546"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM KEYBOARD</h3>
+            <p class="c5">£317</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/files/Monogram_Keyboard_3_45ca86e3-ee84-48a0-b55d-c991d2e57e3c_1366x768_crop_center.jpg.webp?v=1712087520"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM MULTIPAD</h3>
+            <p class="c5">£158</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_CoreBracket1_Monogram_May2020_4578_6683fd8e-be63-45bb-9fbd-dd82a4838db8_1366x911_crop_center.jpg.webp?v=1593651640"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM CORE</h3>
+            <p class="c5">£127</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1366x911_crop_center.jpg.webp?v=1593651849"><br>
+            <div class="c3">
+            <h3 class="c4">SLIDER MODULE</h3>
+            <p class="c5">£127</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_OrbiterHero_Monogram_May2020_4568_3d64e8b3-71ce-441a-9fcd-2b054c423310_1366x911_crop_center.jpg.webp?v=1593651849"><br>
+            <div class="c3">
+            <h3 class="c4">ORBITER MODULE</h3>
+            <p class="c5">£127</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_KeysBracket1_Monogram_May2020_4571_43b65ca9-4fde-4f55-9f0e-32374554ce76_1366x911_crop_center.jpg.webp?v=1593651769"><br>
+            <div class="c3">
+            <h3 class="c4">ESSENTIAL KEYS MODULE</h3>
+            <p class="c5">£103</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/Consoles_DialBracket1_Monogram_May2020_4575_981a6401-f834-4094-9a6e-6cd7d0b374ca_1366x911_crop_center.jpg.webp?v=1593651701"><br>
+            <div class="c3">
+            <h3 class="c4">DIAL MODULE</h3>
+            <p class="c5">£103</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/20221018_MonogramCC_Case_02_1366x911_crop_center.jpg.webp?v=1666799808"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM CARRYING CASE</h3>
+            <p class="c5">£47</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-video-final-august_1366x984_crop_center.jpg.webp?v=1661441054"><br>
+            <div class="c3">
+            <h3 class="c4">CONSOLE BACK: VIDEO</h3>
+            <p class="c5">£55</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-photo-final-august_1366x984_crop_center.jpg.webp?v=1661440997"><br>
+            <div class="c3">
+            <h3 class="c4">CONSOLE BACK: PHOTO</h3>
+            <p class="c5">£31</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/SW-box-render-mini-midi-final-august_1366x984_crop_center.jpg.webp?v=1661440892"><br>
+            <div class="c3">
+            <h3 class="c4">CONSOLE BACK: AUDIO</h3>
+            <p class="c5">£23</p>
+            </div>
+        </div>
+        <div class="c1">
+            <img class="c2" src="https://cdn.shopify.com/s/files/1/0974/7950/products/MONO_CONSOLE_CARE_STU_453eaa1a-02d9-4ba7-9d9a-8d05e2915f8f_1366x904_crop_center.jpg.webp?v=1633485492"><br>
+            <div class="c3">
+            <h3 class="c4">MONOGRAM CARE</h3>
+            <p class="c5">£16 - £103</p>
+            </div>
+        </div>
+      </div>
+      <div class="d">
+        <div class="d1 d4">
+            <h5>MONOGRAM</h5><br>
+            <p>305 King St. W.<br>
+                Suite 502<br>
+                Kitchener, ON<br>
+                Canada</p>
+        </div>
+        <div class="d1 d5">
+            <h5>QUICK LINKS</h5><br>
+            <p>Home</p>
+            <p>How it Works</p>
+            <p>Shop</p>
+            <p>Download</p>
+        </div>
+        <div class="d1 d6">
+            <h5>HELP</h5><br>
+            <p>FAQs</p>
+            <p>Support Center</p>
+            <p>Shipping and Sales</p>
+        </div>
+        <div class="d1 d7">
+            <h5>INFORMATION</h5><br>
+            <p>About Us</p>
+            <p>Work with us</p>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>Terms of Sale</p>
+            <p>Press Kit</p>
+        </div>
+        <div class="d1 d8">
+            <h5>SUBSCRIBE TO MONOGRAM</h5><br>
+            <p>Master productivity with Creative Console and get all<br> the latest Monogram news.</p><br>
+            <input class="d2" type="email" placeholder="Email Address" required>
+            <input class="d3" type="submit"><br>
+            <img src="Images/8.png">
+            <p>© Monogram 2024</p>
+        </div>
+      </div>
+    
+</body>
+</html>
