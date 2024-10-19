@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // var arr = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+        // var c = "X";
+
+        // function good(arr) {
+        //     for (let i = 0; i < 9; i++) {
+        //         if((i%3==0)){
+        //             document.write("<br/>")
+
+        //         }
+        //         document.write(arr[i] + "&nbsp"+"&nbsp")
+
+        //     }
+
+        // }
+
+        // function game(arr,c){
+        //     let d = Number(prompt("Number"));
+        //     arr[d-1] = c;
+        //     good(arr)
+        // } 
+
+        // game(arr,c)
+
+
+
+
+
+        
+
+        // var arr = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+        // var c = "X";
+
+        // function good(arr) {
+        //     for (let i = 0; i < 9; i++) {
+        //         if ((i % 3 == 0)) {
+        //             document.write("<br/>")
+
+        //         }
+        //         document.write(arr[i] + "&nbsp" + "&nbsp")
+
+        //     }
+
+        // }
+
+        // function game(arr, c) {
+        //     for (let k = 0; k < 9; k++) {
+        //         let d = Number(prompt("Number"));
+        //         arr[d -1] = c;
+        //     }
+
+        //     good(arr)
+
+        // }
+
+        // game(arr, c)
+
+
+
+
+
+
+
+
+
+
+        var arr = ["-", "-", "-", "-", "-", "-", "-", "-", "-"]
+        var c = "X";
+
+        function display(arr) {
+            for (let i = 0; i < 9; i++) {
+                if ((i % 3 == 0)) {
+                    document.write("<br/>")
+                }
+                document.write(arr[i]+"&nbsp" + "&nbsp")
+            }
+        }
+
+        function game(arr, c) {
+            for (let k = 1; k <=9; k++) {
+                let d = Number(prompt("Number"));
+                movesuccess=check(arr,c,d)
+                if(!movesuccess) {
+                    alert("wrong move!.. give an another number")
+                    k--;
+                    continue;
+                } 
+                display(arr,c)
+                if(winner(arr,c)){
+                    document.write("<br> Winner "+ c );
+                    break;      
+                } 
+                c = (c == "X")? "O" : "X";
+                document.write("<br/>")  
+                if(k==9){
+                    document.write("<br> Draw")
+                }
+            } 
+            
+        }
+
+        function check(arr,c,d){
+            if(arr[d-1]=='-'){
+                arr[d-1]=c
+                return true;
+            }
+            return false;
+            
+        }
+        
+
+
+        function winner(arr,c){
+          if(arr[0]==c && arr[1]==c && arr[2]==c || 
+             arr[3]==c && arr[4]==c && arr[5]==c ||
+             arr[6]==c && arr[7]==c && arr[8]==c ||
+             arr[0]==c && arr[3]==c && arr[6]==c ||
+             arr[1]==c && arr[4]==c && arr[7]==c ||
+             arr[2]==c && arr[5]==c && arr[8]==c ||
+             arr[0]==c && arr[4]==c && arr[8]==c ||
+             arr[2]==c && arr[4]==c && arr[6]==c){
+                return true;
+            }
+            
+            return false;
+        }
+
+        game(arr, c)
+
+
+
+
+        
+
+    </script>
+</body>
+
+</html>
