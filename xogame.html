@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+        display:grid;
+        width:1000px;
+        grid-template-columns:auto auto auto;
+        grid-gap:10px;
+        margin-bottom: 20px;
+      }
+        div{
+        border:3px solid black;
+        height:150px;
+        width:150px;
+        margin-left:260px;
+        background-size: 100% 100%;
+        
+      }
+      h1{
+        text-align: center;
+
+      }
+    </style>
+</head>
+<body>
+    <h1>XO GAME</h1>
+    <nav>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        <div onclick="change(this)" class="divs"></div>
+        </nav>
+
+        <script>    
+   
+            let a="https://t4.ftcdn.net/jpg/01/70/28/23/360_F_170282328_31qaGRFFKAuAWgWpJsqFtO8UpstN2Bhw.jpg"
+            let b="https://www.kindpng.com/picc/m/235-2356094_effect-letters-alphabet-red-letter-o-in-green.png"
+            let player=b
+
+            function change(j){
+                for(let i=0;i<9;i++){ 
+                    let arr=document.getElementsByClassName("divs");
+                    if(arr[i]==j){
+                        player=player==a?b:a;
+                        console.log(player)
+                     document.getElementsByClassName("divs")[i].style.backgroundImage = `url("${player}")`; 
+                    }
+                  }
+            }
+            function game(arr,player){
+                
+
+            }
+            
+            
+
+            
+            
+        </script>
+    
+</body>
+</html>
