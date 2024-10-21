@@ -7,28 +7,59 @@
     <style>
         nav{
         display:grid;
-        width:1000px;
+        width:500px;
+        height:500px;
         grid-template-columns:auto auto auto;
         grid-gap:10px;
+        margin-left:35%;
         margin-bottom: 20px;
+        background-color:cornsilk;
+        justify-content: center;
+        border:2px solid black;
+        border-radius: 5%;
+
       }
-        div{
+        .divs{
         border:3px solid black;
-        height:150px;
-        width:150px;
-        margin-left:260px;
+        height:130px;
+        width:130px;
         background-size: 100% 100%;
+        margin-top: 10px;
+        background-color:darkgrey;
+        border-radius: 5%;
         
       }
       h1{
         text-align: center;
 
       }
+      .result{
+        position: relative;
+      }
+      #winner{
+        width: 75px;
+        height:30px;
+        border:2px solid black;
+        text-align: center  ;
+        position: absolute;
+        padding-top: 20px;
+      }
+      #restart{
+        width: 75px;
+        height:30px;
+        border:2px solid black;
+        text-align: center  ;
+        margin-left: 1400px;
+        margin-bottom: 70px;
+        position: absolute;
+      }
+      
+      
     </style>
 </head>
 <body>
     <h1>XO GAME</h1>
-    <nav>
+    <nav >
         <div onclick="change(this)" class="divs"></div>
         <div onclick="change(this)" class="divs"></div>
         <div onclick="change(this)" class="divs"></div>
@@ -39,32 +70,96 @@
         <div onclick="change(this)" class="divs"></div>
         <div onclick="change(this)" class="divs"></div>
         </nav>
+        <div class="result">
+        <div id="winner">Winner</div>
+        <button id="restart" onclick="restart()">Restart</button>
+      </div>
 
         <script>    
    
             let a="https://t4.ftcdn.net/jpg/01/70/28/23/360_F_170282328_31qaGRFFKAuAWgWpJsqFtO8UpstN2Bhw.jpg"
             let b="https://www.kindpng.com/picc/m/235-2356094_effect-letters-alphabet-red-letter-o-in-green.png"
-            let player=b
+            let player=a;
+            let gameover=false;
+            let arr=document.getElementsByClassName("divs");
 
             function change(j){
-                for(let i=0;i<9;i++){ 
-                    let arr=document.getElementsByClassName("divs");
-                    if(arr[i]==j){
-                        player=player==a?b:a;
-                        console.log(player)
-                     document.getElementsByClassName("divs")[i].style.backgroundImage = `url("${player}")`; 
-                    }
-                  }
-            }
-            function game(arr,player){
+                if(gameover){
+                  return;
+                }
+                if(!j.style.backgroundImage){
+                  j.style.backgroundImage=`url("${player}")`;
                 
-
+                if(check(arr,player)){
+                  if(player===a){
+                    document.getElementById("winner").innerHTML="X Wins";
+                    alert("X Wins")
+                  }else{
+                    document.getElementById("winner").innerHTML="O Wins";
+                    alert("O Wins")
+                  }
+                  gameover=true;
+                  return;
+                }
+                draw();
+                player=player===a?b:a;
             }
-            
-            
+          }
 
+
+          function check(arr,player){
+            let url=`url("${player}")`;
+            if(
+            (arr[0].style.backgroundImage===url &&
+            arr[1].style.backgroundImage===url &&
+            arr[2].style.backgroundImage===url) ||
+            (arr[3].style.backgroundImage===url &&
+            arr[4].style.backgroundImage===url &&
+            arr[5].style.backgroundImage===url) ||
+            (arr[6].style.backgroundImage===url &&
+            arr[7].style.backgroundImage===url &&
+            arr[8].style.backgroundImage===url) ||
+            (arr[0].style.backgroundImage===url &&
+            arr[3].style.backgroundImage===url &&
+            arr[6].style.backgroundImage===url) ||
+            (arr[1].style.backgroundImage===url &&
+            arr[4].style.backgroundImage===url &&
+            arr[7].style.backgroundImage===url) ||
+            (arr[2].style.backgroundImage===url &&
+            arr[5].style.backgroundImage===url &&
+            arr[8].style.backgroundImage===url) ||
+            (arr[0].style.backgroundImage===url &&
+            arr[4].style.backgroundImage===url &&
+            arr[8].style.backgroundImage===url) ||
+            (arr[2].style.backgroundImage===url &&
+            arr[4].style.backgroundImage===url &&
+            arr[6].style.backgroundImage===url) 
+          ){
+            return true;
+          }
+          return false;
+          }
+
+          function draw(){
+            for(let i=0;i<arr.length;i++){
+              if(!arr[i].style.backgroundImage){
+                return;
+              }
+            }
+            document.getElementById("winner").innerHTML="TIE";
+            alert("TIE")
+            gameover=true;
+          }
+         
+          function restart(){
+            for(i=0;i<arr.length;i++){
+              arr[i].style.backgroundImage="";
+            }
+            player=a;
+            gameover=false;
+            document.getElementById("winner").innerHTML="Winner";
             
-            
+          }     
         </script>
     
 </body>
